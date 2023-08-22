@@ -1,3 +1,11 @@
+# About this Fork
+
+This fork makes the library compatible with CloudFlare Workers by removing the ability to call the ShortUniqueId object as a function.
+
+It's a workaround for this issue: https://github.com/simplyhexagonal/short-unique-id/issues/53
+
+Install using: `npm i git+https://github.com/nonstrict-hq/short-unique-id`
+
 # Short Unique ID (UUID) Generating Library
 ![Tests](https://github.com/jeanlescure/short-unique-id/workflows/tests/badge.svg)
 [![Try short-unique-id on RunKit](https://badge.runkitcdn.com/short-unique-id.svg)](https://npm.runkit.com/short-unique-id)

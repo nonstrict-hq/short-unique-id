@@ -40,9 +40,8 @@ var ShortUniqueId = (() => {
     debug: false,
     length: DEFAULT_UUID_LENGTH
   };
-  var _ShortUniqueId = class extends Function {
+  var _ShortUniqueId = class {
     constructor(argOptions = {}) {
-      super();
       this.dictIndex = 0;
       this.dictRange = [];
       this.lowerBound = 0;

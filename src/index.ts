@@ -110,7 +110,7 @@ const DEFAULT_OPTIONS: ShortUniqueIdOptions = {
  *
  * For more information take a look at the [ShortUniqueIdOptions type definition](/interfaces/shortuniqueidoptions.html).
  */
-export default class ShortUniqueId extends Function {
+export default class ShortUniqueId {
   static default: typeof ShortUniqueId = ShortUniqueId;
 
   public counter: number;
@@ -463,8 +463,6 @@ export default class ShortUniqueId extends Function {
   };
 
   constructor(argOptions: Partial<ShortUniqueIdOptions> = {}) {
-    super();
-
     const options: ShortUniqueIdOptions = {
       ...DEFAULT_OPTIONS,
       ...argOptions as Partial<ShortUniqueIdOptions>,
