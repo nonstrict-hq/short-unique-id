@@ -1,5 +1,7 @@
 # About this Fork
 
+> :warning: Version 5 of the short-unique-id is also CloudFlare compatible. We've switched back to using that, this repository is not maintained anymore.
+
 This fork makes the library compatible with CloudFlare Workers by removing the ability to call the ShortUniqueId object as a function.
 
 It's a workaround for this issue: https://github.com/simplyhexagonal/short-unique-id/issues/53
